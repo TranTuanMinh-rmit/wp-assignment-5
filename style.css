@@ -7,7 +7,7 @@ body {
 
 .topheader{
     background-color: #333;
-    height: 2vh;
+    height: 5vh;
 }
 
 .logo{
@@ -15,37 +15,104 @@ body {
     cursor: pointer;
 }
   
-div.topnav {
+.topnav {
+    margin-top: -4px;
     overflow: hidden;
     background-color: #333;
-    margin-top: -5px;
-    position: sticky;
-}
+  }
   
 .topnav a {
     float: left;
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 15px 17px;
+    padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    margin-left: 5%;
-
 }
   
 .topnav a:hover {
     background-color: #ddd;
     color: black;
-}
-  
-.topnav a.active {
-    background-color: #4CAF50;
-    color: white;
+    transition: ease-in-out 250ms;
 }
   
 .topnav .icon {
     display: none;
+}
+
+.topheader .search-container {
+    float: right;
+    margin-top: 7px;
+    margin-right: 20px;
+}
+  
+.topnav input[type=text] {
+    padding: 6px;
+    margin-top: 10px;
+    font-size: 17px;
+    border: none;
+}
+  
+.topnav .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-right: 16px;
+    margin-top: 10px;
+    background: rgb(80, 80, 80);
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+  
+.topnav .search-container button:hover {
+    background: rgb(100, 100, 100);
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.shop{
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: aqua;
+    height: 300px;
+}
+
+.preview-header{
+    background-color: #333;
+    height: 40px;
+    display: grid;
+    grid-template-columns:1fr 2fr 1fr;
+}
+
+.p-text{
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-top: -10px;
+}
+
+.p-text:hover {
+    background-color: #ddd;
+    color: black;
+    transition: ease-in-out 250ms;
+}
+
+.p-question{
+    float: right;
+    color: #f2f2f2;
+    padding: 14px 16px;
+}
+
+.preview-header img{
+    height: 30px;
 }
   
 @media screen and (max-width: 600px) {
@@ -59,7 +126,7 @@ div.topnav {
 @media screen and (max-width: 600px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive .icon {
-      position: absolute;
+      position: sticky;
       right: 0;
       top: 0;
     }
