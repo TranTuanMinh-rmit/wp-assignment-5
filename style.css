@@ -78,8 +78,8 @@ body {
 .shop{
     margin-left: 10%;
     margin-right: 10%;
-    background-color: aqua;
-    height: 300px;
+    background-color: #ffffff;
+    height: 5000px;
 }
 
 .preview-header{
@@ -113,6 +113,56 @@ body {
 
 .preview-header img{
     height: 30px;
+    margin-top: 5px;
+}
+
+.product-catalog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.product{
+    border: solid;
+    margin: 10px;
+    width: 260px;
+    height: 280px;
+}
+
+.image-horizontal img{
+    height: 150px;
+    width: 240px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.name, .price, .cart{
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    width: 240px;
+}
+
+.name{
+    background-color: #ddd;
+}
+
+.name a{
+    text-decoration: none;
+    color: rgb(37, 37, 37);
+}
+
+.name:hover{
+    background-color: #bbb;
+}
+
+.price{
+    background-color: #bbb;
+}
+
+.cart{
+    background-color: black;
 }
   
 @media screen and (max-width: 600px) {
