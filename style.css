@@ -29,6 +29,7 @@ body {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    margin-left: 3%;
 }
   
 .topnav a:hover {
@@ -123,15 +124,29 @@ body {
     flex-wrap: wrap;
 }
 
-.product{
+.product-horizontal{
     border: solid;
     margin: 10px;
     width: 260px;
-    height: 280px;
+    height: 290px;
+}
+
+.product-vertical{
+    border: solid;
+    margin: 10px;
+    width: 260px;
+    height: 440px;
 }
 
 .image-horizontal img{
     height: 150px;
+    width: 240px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.image-vertical img{
+    height: 300px;
     width: 240px;
     margin-top: 10px;
     margin-left: 10px;
@@ -163,6 +178,18 @@ body {
 
 .cart{
     background-color: black;
+}
+
+.cart input[type=button]{
+    background-color: #A9A9A9;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px 14px;
+    cursor: pointer; 
+}
+
+.cart input[type=button]:hover{
+    background-color: #DCDCDC;
 }
   
 @media screen and (max-width: 600px) {
