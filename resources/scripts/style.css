@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #ddd;
-    height: 500vh;
+    height: 450vh;
 }
 
 .topheader{
@@ -29,7 +29,7 @@ body {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    margin-left: 3%;
+    margin-left: 5%;
 }
   
 .topnav a:hover {
@@ -79,15 +79,17 @@ body {
 .shop{
     margin-left: 10%;
     margin-right: 10%;
+    margin-top: 0%;
     background-color: #ffffff;
-    height: 5000px;
+    height: 400vh;
 }
 
 .preview-header{
     background-color: #333;
-    height: 40px;
+    height: 47px;
     display: grid;
     grid-template-columns:1fr 2fr 1fr;
+    margin-top: 50px;
 }
 
 .p-text{
@@ -96,8 +98,7 @@ body {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
-    margin-top: -10px;
+    font-size: 16px;
 }
 
 .p-text:hover {
@@ -122,6 +123,15 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.product-catalog-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+    margin-top: 40px;
 }
 
 .product-horizontal{
@@ -190,6 +200,41 @@ body {
 
 .cart input[type=button]:hover{
     background-color: #DCDCDC;
+}
+
+.pagination {
+    display: inline-block;
+}
+  
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+  
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+  
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+.footer{
+    background-color: #333;
+    padding: 10px;
+}
+
+.items, .items li, .items li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.icons li span{
+    color: #ffffff;
+    text-decoration: none;
 }
   
 @media screen and (max-width: 600px) {
