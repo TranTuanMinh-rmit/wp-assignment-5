@@ -27,7 +27,8 @@ $createUsersTable = "CREATE TABLE IF NOT EXISTS Users (
     password VARCHAR(20) NOT NULL,
     userAddress VARCHAR(20),
     userMobile VARCHAR(10),
-    role VARCHAR(5) NOT NULL
+    role enum('admin', 'mod', 'user') NOT NULL,
+    UNIQUE(userName)
 )";
 
 $createCartTable = "CREATE TABLE IF NOT EXISTS Carts (
@@ -43,8 +44,11 @@ if (!$conn->query($createProductsTable) or !$conn->query($createUsersTable) or !
     echo "ERROR: $conn->error";
 }
 
-$createAdmin = "INSERT INTO Users values (
-    
+$createAdmin = "INSERT INTO Users 
+                    VALUES ('admin', 'admin', '', '', 'admin')
 )";
+
+if (!$conn->query($createAdmin))
+    echo "ERROR: $conn->error";
 
 $conn->close();
