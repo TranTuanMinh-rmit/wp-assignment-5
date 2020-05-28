@@ -2,7 +2,6 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #ddd;
-    height: 450vh;
 }
 
 .topheader{
@@ -79,9 +78,8 @@ body {
 .shop{
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 0%;
     background-color: #ffffff;
-    height: 400vh;
+    padding-bottom: 150px;
 }
 
 .preview-header{
@@ -89,7 +87,6 @@ body {
     height: 47px;
     display: grid;
     grid-template-columns:1fr 2fr 1fr;
-    margin-top: 50px;
 }
 
 .p-text{
@@ -123,6 +120,8 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    padding-bottom: 50px;
+    padding-top: 20px;
 }
 
 .product-catalog-row{
@@ -235,6 +234,135 @@ body {
 .icons li span{
     color: #ffffff;
     text-decoration: none;
+}
+
+.title{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    background-color: #333;
+    color: #ffffff;
+}
+
+.pictures-display{
+    border-right: solid #ccc;
+}
+
+.pictures-display-pri{
+    padding: 15px;
+}
+
+.pictures-display-sec{
+    padding-left: 16px;
+}
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.entry-body{
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+}
+
+.display-info{
+    padding-left: 30px;
+}
+
+.scale-era{
+    font-size: 32px;
+    padding: 10px;
+    width: 85%;
+}
+
+.gunpla-name{
+    font-size: 22px;
+    border-top: solid #ccc;
+    padding: 10px;
+    width: 85%;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
 }
   
 @media screen and (max-width: 600px) {
