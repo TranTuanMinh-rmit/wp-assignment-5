@@ -43,4 +43,8 @@ if (!$conn->query($createProductsTable) or !$conn->query($createUsersTable) or !
     echo "ERROR: $conn->error";
 }
 
+$createAdmin = "INSERT INTO Users values (
+    
+)";
+
 $conn->close();
