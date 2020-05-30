@@ -9,6 +9,18 @@ body {
     height: 5vh;
 }
 
+.login a{
+    text-decoration: none;
+    color: #ffffff;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.login a:hover{
+    color: #ddd;
+}
+
 .logo{
     position: absolute;
     cursor: pointer;
@@ -137,14 +149,14 @@ body {
     border: solid;
     margin: 10px;
     width: 260px;
-    height: 290px;
+    height: 300px;
 }
 
 .product-vertical{
     border: solid;
     margin: 10px;
     width: 260px;
-    height: 440px;
+    height: 450px;
 }
 
 .image-horizontal img{
@@ -189,15 +201,20 @@ body {
     background-color: black;
 }
 
-.cart input[type=button]{
+input[type=button]{
     background-color: #A9A9A9;
-    border: 2px solid black;
-    border-radius: 5px;
+    border: solid black;
     padding: 5px 14px;
+    height: 40px;
+    width: 150px;
     cursor: pointer; 
 }
 
-.cart input[type=button]:hover{
+input[type=number]{
+    height: 30px;
+}
+
+input[type=button]:hover{
     background-color: #DCDCDC;
 }
 
@@ -356,6 +373,13 @@ body {
     border-top: solid #ccc;
     padding: 10px;
     width: 85%;
+}
+
+.info-cost{
+    text-decoration: none;
+    color: #000;
+    cursor: default;
+    font-size: 18px;
 }
 
 /* 100% Image Width on Smaller Screens */

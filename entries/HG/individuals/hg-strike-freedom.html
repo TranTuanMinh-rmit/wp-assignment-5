@@ -12,8 +12,8 @@
     <div class="topheader">
         <!--Top header, for spacing and search-->
         <div class="search-container">
-            <form action="/action_page.php">
-              <input style="width: 300px" type="text" placeholder="Search.." name="search">
+            <form action="/search_result.php" method="GET">
+              <input id='search-input' style="width: 300px" type="text" placeholder="Search.." name="search">
               <button type="submit"><i class="fas fa-search"></i></button>
             </form>
         </div>
@@ -71,6 +71,17 @@
                 <div class="info-header">
                     <p class="scale-era">1/114th scale High Grade Cosmic Era</p>
                     <p class="gunpla-name">Strike Freedom Gundam (Revive ver.)</p>
+                </div>
+
+                <div class="info-content">
+                    <div class="info-price">
+                        <a class="info-cost"><span>Price: đ </span>650.000</a>
+                    </div>
+
+                    <div class="add-to-cart">
+                        <input type="number" value="Add to Cart" min="1" max="10" value="1">
+                        <input type="button" value="Add to Cart" onclick="" class="button">
+                    </div>
                 </div>
             </div>
         </div>
