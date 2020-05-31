@@ -1,10 +1,10 @@
 <?php
 
 // TODO: change username and read password from environment variable
-$servername = "localhost";
-$username = "username";
-$password = "password";
-$dbname = "assignment5";
+$servername = "sql101.epizy.com";
+$username = "epiz_25903868";
+$password = "ZVvwqST2uqeU";
+$dbname = "epiz_25903868_testmaindb";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
