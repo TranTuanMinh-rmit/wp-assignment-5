@@ -22,7 +22,7 @@ include ('utils.php');
         if (isset($_POST['register'])){
             if ($password === $password_confirm){
                 login($username, $password);
-                redirect('index.html');
+                redirect('index.php');
             }
         }
     }

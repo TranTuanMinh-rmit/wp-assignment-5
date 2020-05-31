@@ -34,7 +34,7 @@
         if (isset($_POST['register'])){
             if ($password === $password_confirm){
                 register($username, $password, $address, $mobile);
-                redirect('index.html');
+                redirect('index.php');
             }
         }
     }
